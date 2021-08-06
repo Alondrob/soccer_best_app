@@ -17,6 +17,40 @@
 <body>
     <h1> Welcome </h1>
 
-    <div id="teams-container"> </div>
+    <form id="new-team-form">
+        <label for="name"> Enter Your Team's Name </label>
+        <input type="text" class="name" name="name"><br><br>
+
+        <label for="formation"> Chose Your Formation 
+            <select for="" class="formation" name="formation">
+                    <option value=""></option>
+                    <option value="4–4–2 "> 4-4-2</option>
+                    <option value="4–3–3 ">4-3-3</option>
+                    <option value="4–4–1–1">4-4-1-1</option>
+                    <option value="4–3–2–1">4-3-2-1</option>
+                    <option value="5–3–2">5-3-2</option>
+                    <option value="3–4–3  ">3-4-3</option>
+            </select>
+        </label><br>
+        
+        <label for="tactics"> Choose Your Style Of Play 
+            <select for="" class="tactics" name="tactics">
+                <option value=""> </option>
+                <option value="tiki-taka"> Tiki-Taka</option>
+                <option value="counter-attack"> Counter Attack</option>
+                <option value="long-ball-movement"> Long Ball Movement</option>
+                <option value="press-posession"> High Press Posession</option>
+                <option value="parking-bus"> Parking The Bus</option>
+            </select>
+        </label><br>
+
+        <label for="manager"> Manager</label>
+        <input type="text" class="manager" name="manager"><br><br>
+
+        <input type="submit">
+
+    </form>
+
+      <h1>Team Name: <div id="teams-container"> </div></h1>
 </body>
 </html>

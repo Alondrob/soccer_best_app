@@ -4,6 +4,6 @@ const newTeamForm = () => document.querySelector('#new-team-form')
 document.addEventListener("DOMContentLoaded", () => {
     
     TeamApi.fetchAll()
-    newteamForm().addEventListener('submit', TeamApi.create)
+    newTeamForm().addEventListener('submit', TeamApi.create)
 })
 

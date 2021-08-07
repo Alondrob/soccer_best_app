@@ -1,5 +1,6 @@
 class PlayersController < ApplicationController
-      def index
+      
+    def index
         team = Team.find(params[:team_id])
         render json: team.players
     end
@@ -8,6 +9,7 @@ class PlayersController < ApplicationController
     def create
         player = Player.create(player_params)
         render json: player
+    end
 
     def update
            player = Player.find(params[:id])

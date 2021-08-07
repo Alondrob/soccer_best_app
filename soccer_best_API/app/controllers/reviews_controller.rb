@@ -1,8 +1,8 @@
 class ReviewsController < ApplicationController
     
     def index
-        team = Team.find(params[:id])
-        render json :team.reviews
+        team = Team.find(params[:team_id])
+        render json: team.reviews
     end
 
 
@@ -29,4 +29,3 @@ class ReviewsController < ApplicationController
 
 end
 
-end

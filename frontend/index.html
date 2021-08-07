@@ -14,10 +14,11 @@
     <script src="./javascripts/models/review.js"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <h1> Welcome </h1>
-
-    <form id="new-team-form">
+    <tr>Alright, Go Ahead And Create your Team !!</tr> 
+    <form id="new-team-form" >
         <label for="name"> Enter Your Team's Name </label>
         <input type="text" class="name" name="name"><br><br>
 
@@ -45,12 +46,16 @@
         </label><br>
 
         <label for="manager"> Manager</label>
-        <input type="text" class="manager" name="manager"><br><br>
-
+        <input type="text" class="manager" name="manager" id="manager"><br><br>
         <input type="submit">
-
     </form>
 
-      <h1>Team Name: <div id="teams-container"> </div></h1>
+    <h1> Teams </h1><br>
+        <div id="teams-container">
+            <div class=""></div>
+        </div>
+    <script> const teamForm = document.getElementById('new-team-form')
+             teamForm.addEventListener('submit', TeamApi.createNewTeam)
+    </script>
 </body>
 </html>
